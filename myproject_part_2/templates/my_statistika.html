@@ -1,0 +1,34 @@
+<html>
+	<head>
+		<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+		  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+		  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <title>Статистика</title>
+        <link rel="stylesheet" type="text/css" href="../static/style.css">
+	</head>
+	<body>
+        <div class="menu">
+            <a href="my_opros.html">Анкета</a>
+            <a href="my_statistika.html">Стастика</a>
+        </div>
+        <br>
+        <br>
+        <br>
+        <h2>Беляша нет, есть статистика</h2>
+        <div class="img"><img src="../static/hey.jpg" alt=""></div>
+        <br>
+        <h5>Информация о возрасте:</h5>
+       {{age_info}}
+        <br>
+        <h5>Самые частотные 3 ответа на каждый из вопросов:</h5>
+        {{all_answers}}
+        <br>
+        <h5>Люди, прошедшие опрос, сейчас живут в следующих городах:</h5>
+        {{current_place}}
+        <br>
+        <h5>Сколько людей из БГУ?</h5>
+        {{bsu}}
+        <br>
+    </body>
+</html>

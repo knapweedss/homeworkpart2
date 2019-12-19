@@ -1,0 +1,174 @@
+<html>
+	<head>
+		<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+		  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+		  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <title>Анкета</title>
+        <link rel="stylesheet" type="text/css" href="../static/style.css">
+	</head>
+	<body>
+          <div class="menu">
+            <a href="my_opros.html">Анкета</a>
+            <a href="my_statistika.html">Стастика</a>
+			  <p class="img"><img src="../static/omg2.png" alt=""></p>
+        </div>
+        <br>
+        <br>
+        <br>
+
+		  <h2>Вы из Башкирии?</h2>
+		  <h2>Пройдите опрос и получите беляш! </h2>
+		  <h2 class="img"><img src="../static/ovza.png" alt=""></h2>
+		  <h3 class="img"><img src="../static/ship.png" alt=""></h3>
+		  <div class="img"><img src="../static/omg.png" alt=""></div>
+		<form class="container" action="/process" method="get">
+			<h3>Анкета информанта</h3>
+            <div class="row">
+				<div class="col-md-4">В вашей семье говорят и на бакширском и на русском?</div>
+				<select name="bilinguism" class="col-md-4">
+					<option value="yes">да</option>
+					<option value="no">нет</option>
+				</select>
+			</div>
+			<div class="row">
+				<div class="col-md-4">Возраст</div>
+				<div class="col-md-4"><input type="number" name="age"></div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">Пол</div>
+				<input class="col-md-4" type="text" name="gender" placeholder="мужской, женский или нейтральный">
+			</div>
+			<div class="row">
+				<div class="col-md-4">Где вы сейчас живете?</div>
+				<input class="col-md-4" type="text" name="lives_now" placeholder="Уфа">
+			</div>
+			<div class="row">
+				<div class="col-md-4">Откуда вы?</div>
+				<input class="col-md-4" type="text" name="origin" placeholder="Уфа">
+			</div>
+			<div class="row">
+				<div class="col-md-4">Уровень образования</div>
+				<select name="education" class="col-md-4">
+					<option value="bach2-1">1 курс</option>
+					<option value="bach-2">2 курс</option>
+					<option value="bach-3">3 курс</option>
+					<option value="bach-4">4 курс</option>
+                    <option value="bach-fin">законченный бакалавриат</option>
+					<option value="master-1">1 курс магистратуры</option>
+					<option value="master-2">2 курс магистратуры</option>
+                    <option value="master-fin">законченная магистратура</option>
+					<option value="phd">аспирантура</option>
+					<option value="candidate">кандидат наук</option>
+					<option value="doctor">доктор наук</option>
+				</select>
+			</div>
+            <div class="row">
+            <div class="col-md-4">ВУЗ</div>
+				<select name="university" class="col-md-4">
+					<option value="bsu">БГУ</option>
+					<option value="bifk">БИФК</option>
+					<option value="other">другой</option>
+				</select>
+            </div>
+			<div class="row">
+				<div class="col-md-4">Какой язык вы считаете родным?</div>
+				<select name="language" class="col-md-4">
+					<option value="russian">русский</option>
+					<option value="english">башкирский</option>
+					<option value="both">оба языка</option>
+				</select>
+			</div>
+			<h3>Вопросы</h3>
+             <div class="row">
+				<p class="col-md-6">Могли бы вы сказать "Пойдем в Азык-тулек"</p>
+					<table class="col-md-8">
+						<tr>
+							<td><input class="radio"type="radio" name="q1" value="Да"></td>
+							<td><input class="radio"type="radio" name="q1" value="Нет"></td>
+						</tr>
+						<tr>
+							<td>Да</td>
+							<td>Нет</td>
+						</tr>
+					</table>
+			</div>
+            <br>
+            <div class="row">
+                <p class="col-md-6">Вы говорите по-башкирски благодаря родителям или школе?</p>
+					<table class="col-md-8">
+						<tr>
+							<td><input class="radio"type="radio" name="q2" value="Родители"></td>
+							<td><input class="radio"type="radio" name="q2" value="Школа"></td>
+                            <td><input class="col-md-8" type="text" name="q2"></td>
+						</tr>
+						<tr>
+							<td>Родителям</td>
+							<td>Школе</td>
+                            <td>Свой вариант</td>
+						</tr>
+					</table>
+			</div>
+            <br>
+            <div class="row">
+                <p class="col-md-6">Кто такой Мустай Карим?</p>
+					<table class="col-md-8">
+						<tr>
+							<td><input class="radio"type="radio" name="q3" value="Писатель"></td>
+							<td><input class="radio"type="radio" name="q3" value="Певец"></td>
+                            <td><input class="radio"type="radio" name="q3" value="Актер"></td>
+						</tr>
+						<tr>
+							<td>Писатель</td>
+							<td>Певец</td>
+                            <td>Актер</td>
+						</tr>
+					</table>
+			</div>
+            <br>
+            <div class="row">
+                <p class="col-md-6">Где вы обычно говорите на бакширском?</p>
+                    <table class="col-md-8">
+                        <tr>
+                            <td><input class="radio"type="radio" name="q4" value="Семья"></td>
+                            <td><input class="radio"type="radio" name="q4" value="Бар"></td>
+                           <td><input class="col-md-8" type="text" name="q4"></td>
+                        </tr>
+                        <tr>
+                            <td>Дома</td>
+                            <td>В баре</td>
+                            <td>Свой вариант</td>
+                        </tr>
+                    </table>
+            </div>
+			</div>
+            <br>
+            <div class="row">
+                <p class="col-md-6">Что такое йома?</p>
+					<table class="col-md-8">
+						<tr>
+							<td><input class="radio"type="radio" name="q5" value="Пятница"></td>
+							<td><input class="radio"type="radio" name="q5" value="Пиво"></td>
+                            <td><input class="col-md-8" type="text" name="q5"></td>
+						</tr>
+						<tr>
+							<td>Пятница</td>
+							<td>Пиво</td>
+                            <td>Свой вариант</td>
+						</tr>
+					</table>
+			</div>
+			<br>
+			<br>
+			<div class="row">
+				<input class="submit" type="submit" name="submit" value="Отправить">
+			</div>
+
+		</form>
+
+
+	</body>
+</html>
+
+
+</html>
